@@ -17,3 +17,6 @@ git add .: adds all the modified files to the staging area and also retains the 
 After adding the files to the staging area, if you are ready to commit use "git commit -m "message"" to commit.
 
 Check for "git log" to see the list of the commits.
+
+
+Dancing Dancing Dancing
