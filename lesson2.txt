@@ -50,5 +50,15 @@ If a commit other than the branches is checked out and changed are made to the f
 
 So whenever an earlier commit is being checked out and changes are added, create a branch using "git branch 'branchName'" and commit them so that the changes are saved to this branch.
 
+Merging:
+
+It is used to merge two branches. For example if different features to an application using two branches, to merge these changes we use "git merge branch1 branch2".
+
+Then git log displays the commits according to their timestamps. So the parent commit won't be just beneath the commits.
+
+To find the differences between a commit and its parent commit after merging branches, we can use "git show commitId".
+
+"git branch -d branchName" deletes the branch and retains the commits of that branch under the merged branch.
+
 
 <--Harshith-->
