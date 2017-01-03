@@ -1,3 +1,19 @@
+\commands!
+
+
+git diff -u <path> <path> /* Finds differences between files*/
+
+git log   /* History of file */
+
+git log --stat	/* History of changes in files */
+
+git init /* Creates a repository */
+
+git status /* Shows the status of changed files */
+
+
+
+
 Appropriate Procedure to commit:
 
 check git status to find the changed files to be committed.
@@ -17,5 +33,18 @@ git add .: adds all the modified files to the staging area and also retains the 
 After adding the files to the staging area, if you are ready to commit use "git commit -m "message"" to commit.
 
 Check for "git log" to see the list of the commits.
+
+Branching:
+
+git branch: displays the current branches in the repository.
+
+git branch "branchName": creates a new branch with the specified name.
+
+Use command "git checkout 'branchName'" to change the working directory to the branch so that the changes committed will be restricted to the new branch not affecting the live or other branches.
+
+Make changes and follow the above procedure for committing.
+
+
+
 
 <--Harshith-->

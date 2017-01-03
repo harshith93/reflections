@@ -36,16 +36,5 @@ Now that you have your workspace set up, what do you want to try using Git for?
 
 
 
-\commands!
-Practice
 
-git diff -u <path> <path> /* Finds differences between files*/
-
-git log   /* History of file */
-
-git log --stat	/* History of changes in files */
-
-git init /* Creates a repository */
-
-git status /* Shows the status of changed files */
 
