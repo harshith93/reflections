@@ -36,6 +36,8 @@ Check for "git log" to see the list of the commits.
 
 Branching:
 
+It helps creating versions of the current projects. We can divide the project to the production and experimental versions.
+
 git branch: displays the current branches in the repository.
 
 git branch "branchName": creates a new branch with the specified name.
