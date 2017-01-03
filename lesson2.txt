@@ -46,7 +46,9 @@ Use command "git checkout 'branchName'" to change the working directory to the b
 
 Make changes and follow the above procedure for committing.
 
+If a commit other than the branches is checked out and changed are made to the files and committed without branching, these changes will get lost and won't show up in the git log.
 
+So whenever an earlier commit is being checked out and changes are added, create a branch using "git branch 'branchName'" and commit them so that the changes are saved to this branch.
 
 
 <--Harshith-->
