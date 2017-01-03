@@ -1,3 +1,19 @@
-Harshith
+Appropriate Procedure to commit:
 
-Bhargav
+check git status to find the changed files to be committed.
+
+git diff: changes between the files in working directory and staging area.
+
+git diff --staged: changed between the files in staging area and the last commit.
+
+git diff commit1_id commit2_id: changes between the commits.
+
+After checking the status, if any files are found and are supposed to be committed. Add them to staging area using git add.
+
+git add fileName: adds specific file to the staging area.
+
+git add .: adds all the modified files to the staging area and also retains the unchanged files with them.
+
+After adding the files to the staging area, if you are ready to commit use "git commit -m "message"" to commit.
+
+Check for "git log" to see the list of the commits.
