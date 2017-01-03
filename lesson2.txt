@@ -1,3 +1,19 @@
+\commands!
+
+
+git diff -u <path> <path> /* Finds differences between files*/
+
+git log   /* History of file */
+
+git log --stat	/* History of changes in files */
+
+git init /* Creates a repository */
+
+git status /* Shows the status of changed files */
+
+
+
+
 Appropriate Procedure to commit:
 
 check git status to find the changed files to be committed.
@@ -6,7 +22,7 @@ git diff: changes between the files in working directory and staging area.
 
 git diff --staged: changed between the files in staging area and the last commit.
 
-git diff commit1_id commit2_id: changes between the commits.
+git diff oldCommit_id newCommit_id: changes between the commits.
 
 After checking the status, if any files are found and are supposed to be committed. Add them to staging area using git add.
 
@@ -19,4 +35,35 @@ After adding the files to the staging area, if you are ready to commit use "git 
 Check for "git log" to see the list of the commits.
 
 
+
 Dancing Dancing Dancing
+
+Branching:
+
+It helps creating versions of the current projects. We can divide the project to the production and experimental versions.
+
+git branch: displays the current branches in the repository.
+
+git branch "branchName": creates a new branch with the specified name.
+
+Use command "git checkout 'branchName'" to change the working directory to the branch so that the changes committed will be restricted to the new branch not affecting the live or other branches.
+
+Make changes and follow the above procedure for committing.
+
+If a commit other than the branches is checked out and changed are made to the files and committed without branching, these changes will get lost and won't show up in the git log.
+
+So whenever an earlier commit is being checked out and changes are added, create a branch using "git branch 'branchName'" and commit them so that the changes are saved to this branch.
+
+Merging:
+
+It is used to merge two branches. For example if different features to an application using two branches, to merge these changes we use "git merge branch1 branch2".
+
+Then git log displays the commits according to their timestamps. So the parent commit won't be just beneath the commits.
+
+To find the differences between a commit and its parent commit after merging branches, we can use "git show commitId".
+
+"git branch -d branchName" deletes the branch and retains the commits of that branch under the merged branch.
+
+
+<--Harshith-->
+
