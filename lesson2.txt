@@ -61,4 +61,4 @@ To find the differences between a commit and its parent commit after merging bra
 "git branch -d branchName" deletes the branch and retains the commits of that branch under the merged branch.
 
 
-<--Harshith-->
+<--Harshith Bhargava Reddy-->
